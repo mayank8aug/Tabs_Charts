@@ -1,2 +1,3 @@
 # Tabs_Charts
-Sample application to create tabstrip in Bootstrap and doughnut charts using chart.js
+
+- Open the index.html in a web browser.
