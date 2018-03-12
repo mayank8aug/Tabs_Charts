@@ -1,0 +1,151 @@
+body {
+    font-size: 16px;
+}
+
+table {
+    margin: 1rem 0 !important;
+    font-size: 1.4rem;
+}
+
+tbody td {
+    border: 1px solid #DDD;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.orange {
+    color: #FFAA00;
+}
+
+.green {
+    color: #00AA00;
+}
+
+td:not(.tdLabel) {
+    text-align: center;
+}
+
+#inferenceHeaderId, #assumptionHeaderId {
+    padding: 2rem 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #DDD;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #22C064;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #22C064;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#skillDataId {
+    padding: 4rem 1rem 2rem 0;
+}
+
+#skillDataText {
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-right: 3rem;
+}
+
+.switch {
+    vertical-align: bottom;
+}
+
+#dispText {
+    top: 10px;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.sectionClass {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    margin-right: 0.6rem;
+}
+
+.boldClass {
+    font-weight: 700;
+}
+
+.fadedText {
+    color: #999999;
+}
+
+.chartClass {
+    display: inline-block !important;
+    width: 250px !important;
+    height: 125px !important;
+    position: relative;
+    bottom: 20px;
+}
+
+.gridEls {
+    display: inline-block;
+}
+
+.cardEls {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #DDD;
+}
+
+.container {
+    padding-top: 3rem;
+    margin: 2rem;
+}
+
+.container ul {
+    background: #F3F3F3;
+}

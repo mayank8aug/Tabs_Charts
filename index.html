@@ -1,0 +1,132 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = init()>
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li><a data-toggle="tab" href="#overall">Overall</a></li>
+        <li><a data-toggle="tab" href="#verbalRC">Verbal RC</a></li>
+        <li class="active"><a data-toggle="tab" href="#verbalCR">Verbal CR</a></li>
+        <li><a data-toggle="tab" href="#verbalSC">Verbal SC</a></li>
+        <li><a data-toggle="tab" href="#quantPS1">Quant PS</a></li>
+        <li><a data-toggle="tab" href="#quantPS2">Quant PS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="overall" class="tab-pane fade">
+            <h3>Container for Overall tab</h3>
+        </div>
+        <div id="verbalRC" class="tab-pane fade">
+            <h3>Container for Verbal RC tab</h3>
+        </div>
+        <div id="verbalCR" class="tab-pane fade  in active">
+            <div id="skillDataId">
+                <span id="skillDataText">Skill Data</span>
+                <span id="toggleSwitch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <span id="dispText">
+                    Display only weak areas
+                </span>
+            </div>
+            <div id="skillDataCardsId">
+                <div id="inferenceContainerId" class="sectionClass">
+                    <div id="inferenceHeaderId">
+                        <span class="boldClass">Inference </span>
+                        <span class="fadedText">(avg time 1 min 3 sec)</span>
+                    </div>
+                    <div id="inferenceCardId" class="cardEls">
+                        <canvas id="inferenceChartId" class="chartClass">
+                        </canvas>
+                        <div id="inferenceGridId" class="gridEls">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                        <td>ACCURACY</td>
+                                        <td>AVG. TIME</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tdLabel">Easy</td>
+                                        <td class="red">15 / 20</td>
+                                        <td>1 min 3 s</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdLabel">Medium</td>
+                                        <td class="orange">8 / 15</td>
+                                        <td>55 s</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdLabel">Hard</td>
+                                        <td class="green">7 / 15</td>
+                                        <td>1 min 15 s</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="assumptionContainerId" class="sectionClass">
+                    <div id="assumptionHeaderId">
+                        <span class="boldClass">Assumption </span>
+                        <span class="fadedText">(avg time 1 min 3 sec)</span>
+                    </div>
+                    <div id="assumptionCardId" class="cardEls">
+                        <canvas id="assumptionChartId"  class="chartClass">
+                        </canvas>
+                        <div id="assumptionGridId" class="gridEls">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>ACCURACY</td>
+                                    <td>AVG. TIME</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="tdLabel">Easy</td>
+                                    <td class="red">15 / 20</td>
+                                    <td>1 min 3 s</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdLabel">Medium</td>
+                                    <td class="orange">8 / 15</td>
+                                    <td>55 s</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdLabel">Hard</td>
+                                    <td class="green">7 / 15</td>
+                                    <td>1 min 15 s</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="verbalSC" class="tab-pane fade">
+            <h3>Container for Verbal SC tab</h3>
+        </div>
+        <div id="quantPS1" class="tab-pane fade">
+            <h3>Container for Quant PS tab</h3>
+        </div>
+        <div id="quantPS2" class="tab-pane fade">
+            <h3>Container for Quant PS tab</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>
